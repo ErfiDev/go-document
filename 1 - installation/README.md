@@ -1,6 +1,6 @@
 ## Download GO
 
-Click to this link and download GO for your operation
+Click to this [link] (https://golang.org/doc/install) and download GO for your operation
 system.
 
 ## Install GO
