@@ -16,7 +16,8 @@ two types of packages
 
 - Executable
 - Reusable
-
+  <br>
+</br>
 ## what does "import" mean
 
 the import statement is used to give our package
@@ -29,9 +30,10 @@ import "fmt"
 <br>
 so saying import fmt specificly means give my package main access to all of the code and all the functionality that is contained inside of other package called fmt
 
+<br>
 - fmt the name of the standard library package that is includes with the go programming language by default the fmt package is used to print out a lot of different information specificly to the terminal
   just give you a better sense of debugging and stuff like that
-
+<br>
 ## what is that "func" thing
 
 func is a short of the function in golang
@@ -42,6 +44,7 @@ func is a short of the function in golang
     }
 ```
 
+<br>
 1. func is a function keyword
 2. main is a function name
 3. () is a function arguments
