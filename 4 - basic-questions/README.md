@@ -1,6 +1,6 @@
 # Basic Questions
 
-# what doed "package main" mean
+## what does "package main" mean
 
 when we see the word package in go
 we can think of a package as being like a project
