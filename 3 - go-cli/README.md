@@ -1,27 +1,27 @@
-## Golang CLI
+# Golang CLI
 
 How do we run the code in our project?
 
-# Go build
+## Go build
 
 Compile a bunch of GO source code files
 
-# Go run
+## Go run
 
 Compiles and executes one or two files
 
-# Go fmt
+## Go fmt
 
 Formats all the codes in each file in current directory
 
-# Go install
+## Go install
 
 Compiles and installs a GO package
 
-# Go get
+## Go get
 
 Downloads the raw source code of someone else's package
 
-# Go test
+## Go test
 
 Run any tests in associated with the current project
