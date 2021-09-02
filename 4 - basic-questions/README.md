@@ -16,6 +16,7 @@ two types of packages
 
 - Executable
 - Reusable
+
   <br>
 </br>
 
@@ -32,6 +33,8 @@ import "fmt"
 so saying import fmt specificly means give my package main access to all of the code and all the functionality that is contained inside of other package called fmt
 
 <br>
+</br>
+
 - fmt the name of the standard library package that is includes with the go programming language by default the fmt package is used to print out a lot of different information specificly to the terminal
   just give you a better sense of debugging and stuff like that
 
