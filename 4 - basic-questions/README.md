@@ -46,6 +46,7 @@ func is a short of the function in golang
 ```
 
 <br>
+
 1. func is a function keyword
 2. main is a function name
 3. () is a function arguments
