@@ -1,6 +1,9 @@
 # Go document
 
 a GO language free and open-source document for learning from zero level
+<br >
+</br>
+Please publish and collaborate OPEN-SOURCE
 
 ### Sections
 
