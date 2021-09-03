@@ -12,3 +12,11 @@ Please publish and collaborate OPEN-SOURCE
 2. Hello-world program
 3. Golang cli commands
 4. Basic questions answers
+5. values
+6. variables
+7. constant
+8. for loop
+9. if/else
+10. switch
+11. arrays
+12. slices
