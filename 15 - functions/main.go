@@ -17,6 +17,10 @@ func main() {
 	}
 	hello("erfan")
 	// return hello erfan
+
+	name, age := multipleReturns("erfan", 17)
+	fmt.Println(name, age)
+	// return erfan , 17
 }
 
 // Here’s a function that takes two ints and
@@ -32,4 +36,9 @@ func sum(a, b int) int {
 // trailing arguments for example:
 func users(names ...string) []string {
 	return names
+}
+
+// Multiple Return Values
+func multipleReturns(name string, age int) (string, int) {
+	return name, age
 }
