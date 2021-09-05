@@ -21,6 +21,10 @@ func main() {
 	name, age := multipleReturns("erfan", 17)
 	fmt.Println(name, age)
 	// return erfan , 17
+
+	fake := fakeFunc(1)
+	fmt.Println(fake)
+	// return 2
 }
 
 // Here’s a function that takes two ints and
@@ -41,4 +45,13 @@ func users(names ...string) []string {
 // Multiple Return Values
 func multipleReturns(name string, age int) (string, int) {
 	return name, age
+}
+
+// Recursive functions
+func fakeFunc(x int) int {
+	if x == 0 {
+		return 1
+	}
+
+	return x + fakeFunc(x-1)
 }
