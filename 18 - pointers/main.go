@@ -76,6 +76,10 @@ func main() {
 	fmt.Println("to zero with pointer: ", x)
 	// return 0
 	// becuase change the original variable in memory
+
+	// &Variable means give me the memory address
+	// *Pointer means give me the value this memory
+	// address is pointing at
 }
 
 func toZero(value int) {
