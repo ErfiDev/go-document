@@ -80,6 +80,14 @@ func main() {
 	// &Variable means give me the memory address
 	// *Pointer means give me the value this memory
 	// address is pointing at
+
+	// Value types
+	// Use pointers to change these things in a function
+	// Int , String , Struct , Bool , Float
+
+	// Refrence types
+	// Don't worry about pointers with these
+	// Slice , Maps , Channels , Pointers , Functions
 }
 
 func toZero(value int) {
