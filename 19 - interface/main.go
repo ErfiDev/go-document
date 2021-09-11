@@ -38,6 +38,13 @@ func main() {
 	fmt.Println(dodge)
 }
 
+// func log(h human){
+// 	fmt.Println(h.Speak())
+// }
+// func log(a animal) {
+// 	fmt.Println(a.Speak())
+// }
+// the interfaces solving this big problem on the top
 func log(in testInterface) {
 	fmt.Println(in.Speak())
 }
