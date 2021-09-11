@@ -2,35 +2,50 @@ package main
 
 import "fmt"
 
-type all interface {
-	logger() string
+type human struct {
+	name string
 }
-type human struct{}
-type animal struct{}
-type user []string
+
+type animal struct {
+	name string
+}
+
+type car struct {
+	name string
+}
+
+type testInterface interface {
+	// types contain Speak() method
+	Speak() string
+}
 
 func main() {
-	h := human{}
-	a := animal{}
-	newUser := user{}
+	// Interfaces are named collections of method signatures.
+	//For our example we’ll implement this interface on human and animal types.
+	erfan := human{"erfan"}
+	dog := animal{"pitter"}
+	dodge := car{"dodge raptor"}
+	// human and animal type contain Speak()
+	// method so can access to log() function
 
-	printer(h)
-	printer(a)
-	printer(newUser)
+	log(erfan)
+	log(dog)
+
+	// log(dodge)
+	// Error: cannot use dodge (variable of type car)
+	// as testInterface value in argument to log:
+	// missing method Speak()
+	fmt.Println(dodge)
 }
 
-func printer(a all) {
-	fmt.Println(a.logger())
+func log(in testInterface) {
+	fmt.Println(in.Speak())
 }
 
-func (human) logger() string {
-	return "hello human"
+func (human) Speak() string {
+	return "hellooooo"
 }
 
-func (animal) logger() string {
-	return "hello animal"
-}
-
-func (user) logger() string {
-	return "hello user"
+func (animal) Speak() string {
+	return "hop hop"
 }
