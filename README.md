@@ -27,3 +27,4 @@ Please publish and collaborate OPEN-SOURCE
 17. methods
 18. pointer
 19. interfaces
+20. empty-interfaces
