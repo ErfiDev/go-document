@@ -20,3 +20,10 @@ Please publish and collaborate OPEN-SOURCE
 10. switch
 11. arrays
 12. slices
+13. maps
+14. range
+15. functions
+16. struct
+17. methods
+18. pointer
+19. interfaces
