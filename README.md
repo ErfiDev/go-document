@@ -29,3 +29,4 @@ Please publish and collaborate OPEN-SOURCE
 19. interfaces
 20. empty-interfaces
 21. goroutines
+22. blank-identifier
