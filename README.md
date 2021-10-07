@@ -30,3 +30,4 @@ Please publish and collaborate OPEN-SOURCE
 20. empty-interfaces
 21. goroutines
 22. blank-identifier
+23. defer
