@@ -31,3 +31,5 @@ Please publish and collaborate OPEN-SOURCE
 21. goroutines
 22. blank-identifier
 23. defer
+24. panic
+25. recover
