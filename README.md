@@ -33,3 +33,4 @@ Please publish and collaborate OPEN-SOURCE
 23. defer
 24. panic
 25. recover
+26. select
