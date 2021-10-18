@@ -34,3 +34,4 @@ Please publish and collaborate OPEN-SOURCE
 24. panic
 25. recover
 26. select
+27. nil
