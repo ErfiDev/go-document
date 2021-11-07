@@ -5,7 +5,7 @@ a GO language free and open-source document for learning from zero level
 </br>
 Please publish and collaborate OPEN-SOURCE
 
-### Sections
+## Basics Sections
 
 0. About go language
 1. Installation
@@ -36,3 +36,9 @@ Please publish and collaborate OPEN-SOURCE
 26. select
 27. nil
 28. packages
+
+
+## Web server section
+<p>
+    in this section we are gonna going to create a web server with go programming language 
+</p>
