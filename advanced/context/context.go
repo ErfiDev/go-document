@@ -34,7 +34,7 @@ func main() {
 
 	select {
 	case <-time.After(1 * time.Second):
-		fmt.Println("after one milisecond")
+		fmt.Println("after one second")
 
 	case <-ctx.Done():
 		fmt.Println(ctx.Err())
