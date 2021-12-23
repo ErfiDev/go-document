@@ -37,7 +37,7 @@ func main() {
 
 	// Trim functions
 	withSpace := "Er fa n"
-	trimLeftStr := "johnjohn";
+	trimLeftStr := "johnjohn"
 	fmt.Println(strings.Trim(myName , "Er"))
 	fmt.Println(strings.TrimSpace(withSpace))
 	fmt.Println(strings.TrimLeft(trimLeftStr , "jo"))
