@@ -5,6 +5,16 @@ import (
 	"sync"
 )
 
+var i int
+
+func worker(wg *sync.WaitGroup, m *sync.Mutex) {
+	m.Lock()
+	i = i + 1
+	m.Unlock()
+
+	wg.Done()
+}
+
 func main() {
 	// Sync package Mutex feature
 
@@ -16,31 +26,14 @@ func main() {
 		memory location at least one of them is a write.
 	*/
 
-	// if we run the code below with -race
-	// we can see the data race
-
-	// var x int
-	// go func() {
-	// 	x++
-	// }()
-	// fmt.Println(x)
-
-	// Fixing the problem with `Mutex`
-
+	wg := new(sync.WaitGroup)
 	m := new(sync.Mutex)
 
-	var x int
+	for j := 0; j < 100; j++ {
+		wg.Add(1)
+		go worker(wg, m)
+	}
 
-	go func() {
-		m.Lock()
-		x++
-		m.Unlock()
-	}()
-
-	m.Lock()
-	fmt.Println(x)
-	m.Unlock()
-
-	// if we run the code with -race
-	// we see everything is ok.
+	wg.Wait()
+	fmt.Println(i)
 }
