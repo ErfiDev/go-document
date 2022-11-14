@@ -1,8 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
+	_ "os"
+	// one of the blank identifier use case
 )
 
 // the blank identifier
@@ -22,23 +24,23 @@ func main() {
 	// the blank identifier to discard the irrelevant value.
 
 	// Example 1
-	users := []string{"erfan", "john" , "tom" , "dominic"}
+	users := []string{"erfan", "john", "tom", "dominic"}
 
-	for _ , value := range users {
+	for _, value := range users {
 		fmt.Println(value)
 	}
 
 	// Example 2
-	_ , err := ExampleTwo(19)
+	_, err := ExampleTwo(19)
 	if err != nil {
 		fmt.Println(err)
 	}
 }
 
-func ExampleTwo(i int) (string , interface{}) {
+func ExampleTwo(i int) (string, interface{}) {
 	if i < 18 {
-		return "" , errors.New("error")
+		return "", errors.New("error")
 	} else {
-		return "ok" , ""
+		return "ok", ""
 	}
 }
